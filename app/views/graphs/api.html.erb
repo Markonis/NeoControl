@@ -1,0 +1,211 @@
+<!-- Content Header (Page header) -->
+			<section class="content-header">
+			  <h1>Test Requests<small>Version 1.0</small></h1>
+			  <ol class="breadcrumb">
+				<li><a href="#"><i class="fa fa-calendar"></i> Home</a></li>
+				<li>Test Requests</li>
+			  </ol>
+			</section>
+
+		<!-- Main content -->
+		<section class="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="box">
+			            <div class="box-header">
+			              <h3 class="box-title">Resources available for user</h3>
+			              <div class="box-tools pull-right">
+				          	<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+				          </div>
+			            </div>
+			            <!-- /.box-header -->
+			            <div class="box-body test-request-form" data-type='user-resources'>
+			            	<div class="form-group">
+				            	<label>Username</label>
+				            	<input type="text" class="form-control identifier" />
+			            	</div>
+			            	<div class="form-group text-right">
+			            		<button class="btn btn-primary btn-flat">Test Request</button>
+			            	</div>
+			            	<div class="form-group">
+			            		<h4>Result:</h4>
+			            		<div class='result'>No Result</div>
+			            	</div>
+			            </div>
+			            <!-- /.box-body -->
+			          </div>
+			          <!-- /.box -->
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+			            <div class="box-header">
+			              <h3 class="box-title">Resources available to user group</h3>
+			              <div class="box-tools pull-right">
+				          	<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+				          </div>
+			            </div>
+			            <!-- /.box-header -->
+			            <div class="box-body test-request-form" data-type='group-resources'>
+			            	<div class="form-group">
+				            	<label>Group name</label>
+				            	<input type="text" class="form-control identifier" />
+			            	</div>
+			            	<div class="form-group text-right">
+			            		<button class="btn btn-primary btn-flat">Test Request</button>
+			            	</div>
+			            	<div class="form-group">
+			            		<h4>Result:</h4>
+			            		<div class='result'>No Result</div>
+			            	</div>
+			            </div>
+			            <!-- /.box-body -->
+			          </div>
+			          <!-- /.box -->
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+			            <div class="box-header">
+			              <h3 class="box-title">Users with access to a certain resource</h3>
+			              <div class="box-tools pull-right">
+				          	<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+				          </div>
+			            </div>
+			            <!-- /.box-header -->
+			            <div class="box-body test-request-form" data-type='resource-users'>
+			            	<div class="form-group">
+				            	<label>Resource name</label>
+				            	<input type="text" class="form-control identifier"/>
+			            	</div>
+			            	<div class="form-group text-right	">
+			            		<button class="btn btn-primary btn-flat">Test Request</button>
+			            	</div>
+			            	<div class="form-group">
+			            		<h4>Result:</h4>
+			            		<div class="result">No Result</div>
+			            	</div>
+			            </div>
+			            <!-- /.box-body -->
+			          </div>
+			          <!-- /.box -->
+					</div>
+					<div class="col-lg-3">
+						<div class="box">
+			            <div class="box-header">
+			              <h3 class="box-title">User Groups with access to a certain resource</h3>
+			              <div class="box-tools pull-right">
+				          	<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+				          </div>
+			            </div>
+			            <!-- /.box-header -->
+			            <div class="box-body test-request-form" data-type='resource-groups'>
+			            	<div class="form-group">
+				            	<label>Resource name</label>
+				            	<input type="text" class="form-control identifier"/>
+			            	</div>
+			            	<div class="form-group text-right">
+			            		<button class="btn btn-primary btn-flat">Test Request</button>
+			            	</div>
+			            	<div class="form-group">
+			            		<h4>Result:</h4>
+			            		<div class="result">No Result</div>
+			            	</div>
+			            </div>
+			            <!-- /.box-body -->
+			          </div>
+			          <!-- /.box -->
+					</div>
+				</div>
+				<!--<div class="row">-->
+				<!--	<div class="col-lg-6">-->
+				<!--		<div class="box">-->
+			 <!--           <div class="box-header">-->
+			 <!--             <h3 class="box-title">Find connections</h3>-->
+			 <!--           </div>-->
+			            <!-- /.box-header -->
+			 <!--           <div class="box-body">-->
+			 <!--           	<div class="row form-group">-->
+			 <!--           		<div class="col-md-6">-->
+			 <!--           			<div class="form-group">-->
+				<!--            			<label>Starting Node Type</label>-->
+				<!--            			<select id="snType" class="form-control">-->
+				<!--            				<option value="resources">Resource</option>-->
+				<!--            				<option value="usergroups">User Group</option>-->
+				<!--            				<option value="users">User</option>-->
+				<!--            			</select>-->
+				<!--            		</div>-->
+			 <!--           			<div class="form-group">-->
+				<!--            			<label>Starting Node Identifier</label>-->
+				<!--            			<input type="text" id="snId" class="form-control" />-->
+				<!--            		</div>-->
+			 <!--           			<div class="form-group">-->
+				<!--            			<label>Starting Node Name</label>-->
+				<!--            			<input type="text" id="snName" class="form-control" />-->
+				<!--            		</div>-->
+			 <!--           		</div>-->
+			 <!--           		<div class="col-md-6">-->
+				<!--            		<div class="form-group">-->
+				<!--            			<label>End Node Type</label>-->
+				<!--            			<select id="enType" class="form-control">-->
+				<!--            				<option value="resources">Resource</option>-->
+				<!--            				<option value="usergroups">User Group</option>-->
+				<!--            				<option value="users">User</option>-->
+				<!--            			</select>-->
+			 <!--           			</div>-->
+			 <!--           			<div class="form-group">-->
+				<!--            			<label>End Node Identifier</label>-->
+				<!--            			<input type="text" id="snId" class="form-control" />-->
+			 <!--           			</div>-->
+			 <!--           			<div class="form-group">-->
+				<!--            			<label>End Node Name</label>-->
+				<!--            			<input type="text" id="snName" class="form-control" />-->
+				<!--            		</div>-->
+			 <!--           		</div>-->
+			 <!--           	</div>-->
+			 <!--           	<div class="row form-group">-->
+			 <!--           		<div class="col-md-12 form-group">-->
+			 <!--           			<label>Generated Request</label>-->
+			 <!--           			<span id="genRequestSpan">Some text</span>-->
+			 <!--           		</div>-->
+			 <!--           	</div>-->
+			 <!--           	<div class="row form-group">-->
+			 <!--           		<div class="col-md-12 text-right form-group">-->
+			 <!--           			<button id="connectionBtn" class="btn btn-primary btn-flat btn-lg">Test Request</button>-->
+			 <!--           		</div>-->
+			 <!--           	</div>-->
+			 <!--           	<div class="form-group">-->
+			 <!--           		<h4>Result:</h4>-->
+			 <!--           		<div id="connectionResult">No Result</div>-->
+			 <!--           	</div>-->
+			 <!--           </div>-->
+			            <!-- /.box-body -->
+			 <!--         </div>-->
+			          <!-- /.box -->
+				<!--	</div>-->
+				<!--	<div class="col-lg-6">-->
+				<!--		<div class="box">-->
+			 <!--           <div class="box-header">-->
+			 <!--             <h3 class="box-title">Custom Requests</h3>-->
+			 <!--           </div>-->
+			            <!-- /.box-header -->
+			 <!--           <div class="box-body">-->
+			 <!--           	<div class="form-group">-->
+				<!--            	<label>Enter Custom Request</label>-->
+				<!--            	<input type="text" id="customRequestTxt" class="form-control" placeholder="example" />-->
+			 <!--           	</div>-->
+			 <!--           	<div class="form-group text-right">-->
+			 <!--           		<button id="customRequestBtn" class="btn btn-primary btn-flat">Test Request</button>-->
+			 <!--           	</div>-->
+			 <!--           	<div class="form-group">-->
+			 <!--           		<h4>Result:</h4>-->
+			 <!--           		<div id="customResult">No Result</div>-->
+			 <!--           	</div>-->
+			 <!--           </div>-->
+			            <!-- /.box-body -->
+			 <!--         </div>-->
+			          <!-- /.box -->
+				<!--	</div>-->
+					
+				</div>
+			</div>
+		</section>

@@ -1,0 +1,40 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>Resource<small>Version 1.0</small></h1>
+  <ol class="breadcrumb">
+	<li><a href="#"><i class="fa fa-database"></i> Home</a></li>
+	<li>Resource</li>
+  </ol>
+</section>
+
+<p id="notice"><%= notice %></p>
+<section class="content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="box">
+		      <div class="box-header">
+    	      <h3 class="box-title">New Resource</h3>
+		      </div>
+		      <!-- /.box-header -->
+		      <div class="box-body">
+            <p>
+              <strong>Full path:</strong>
+              <%= @resource.full_path %>
+            </p>
+            <p>
+              <strong>Description:</strong>
+              <%= @resource.description %>
+            </p>
+          </div>
+			    <!-- /.box-body -->
+	      </div>
+			  <!-- /.box -->
+	    </div>
+	  </div>
+  </div>
+</section>
+
+
+<%= link_to 'Edit', edit_resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>

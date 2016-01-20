@@ -1,0 +1,36 @@
+.font-lg{
+	font-size: large;
+}
+
+.font-lg > div{
+	display: inline;
+}
+
+.font-lg > div > i {
+	margin: 8px;
+}
+
+.height100{
+	height: 100px!important;
+}
+
+.resource-legend{
+	color: rgb(49, 130, 189);
+}
+
+textarea{
+	height: 150px!important;
+	resize:none;
+}
+
+.user-legend{
+	color: rgb(253, 141, 60);
+}
+
+.usergroup-legend{
+	color: rgb(49, 163, 84);
+}
+
+.width25px{
+	width: 25px;
+}
