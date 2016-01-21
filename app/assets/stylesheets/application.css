@@ -14,8 +14,6 @@
  *= require dataTables.bootstrap
  *= require AdminLTE.min
  *= require _all-skins.min
- *= require util.css
- *= require editor.css
  *= require_tree .
  *= require_self
  */

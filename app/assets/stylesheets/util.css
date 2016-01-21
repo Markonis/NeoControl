@@ -14,7 +14,7 @@
 	height: 100px!important;
 }
 
-.resource-legend{
+.user-legend{
 	color: rgb(49, 130, 189);
 }
 
@@ -23,11 +23,11 @@ textarea{
 	resize:none;
 }
 
-.user-legend{
+.usergroup-legend{
 	color: rgb(253, 141, 60);
 }
 
-.usergroup-legend{
+.resource-legend{
 	color: rgb(49, 163, 84);
 }
 
