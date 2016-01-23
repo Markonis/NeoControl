@@ -24,20 +24,22 @@ class GraphsController < ApplicationController
     respond_to do |format|
       format.html
       format.json do
+        result = []
         case params[:type]
         when 'user-resources'
           user = User.where(username: params[:identifier]).first
-          render json: user.resources.to_a
+          result = user.all_resources.to_a if user
         when 'group-resources'
           group = Group.where(name: params[:identifier]).first
-          render json: user.resources if user
+          result = group.all_resources if  group
         when 'resource-users'
           resource = Resource.where(name: params[:identifier]).first
-          render json: resource.all_users if resource
+          result = resource.all_users if resource
         when 'resource-groups'
           resource = Resource.where(name: params[:identifier]).first
-          render json: resource.all_groups if resource
+          result = resource.all_groups if resource
         end
+        render json: result
       end
     end
   end

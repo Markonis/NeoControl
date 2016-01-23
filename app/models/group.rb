@@ -15,14 +15,14 @@ class Group
   end
   
   def all_resources(depth = nil)
-    depth_str = depth ? "*1..#{depth}" : ''
+    depth_str = depth ? "*1..#{depth}" : '*'
     session = Neo4j::Session.current
-    result = session.query.match("({uuid: \"#{id}\"})-[#{depth_str}]-(r:Resource)").to_a.uniq
+    result = session.query.match("({uuid: \"#{id}\"})-[#{depth_str}]-(r:Resource) return r").to_a.uniq
     result.map{|item| item.r}
   end
   
   def all_children(depth = nil)
-    depth_str = depth ? "*1..#{depth}" : ''
+    depth_str = depth ? "*1..#{depth}" : '*'
     session = Neo4j::Session.current
     result = session.query.match("({uuid: \"#{id}\"})-[#{depth_str}]->(g:Group) return g").to_a.uniq
     result.map{|item| item.g}

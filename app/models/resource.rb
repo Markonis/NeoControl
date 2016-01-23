@@ -7,14 +7,14 @@ class Resource
   property :description, type: String
 
   def all_users(depth = nil)
-    depth_str = depth ? "*1..#{depth}" : ''
+    depth_str = depth ? "*1..#{depth}" : '*'
     session = Neo4j::Session.current
     result = session.query.match("(u:User)-[#{depth_str}]-({uuid: \"#{id}\"}) return u").to_a.uniq
     result.map{|item| item.u}
   end
   
   def all_groups(depth = nil)
-    depth_str = depth ? "*1..#{depth}" : ''
+    depth_str = depth ? "*1..#{depth}" : '*'
     session = Neo4j::Session.current
     result = session.query.match("(g:Group)-[#{depth_str}]-({uuid: \"#{id}\"}) return g").to_a.uniq
     result.map{|item| item.g}
