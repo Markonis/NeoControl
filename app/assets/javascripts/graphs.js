@@ -554,7 +554,7 @@ $('.test-request-form').each(function () {
       dataType: 'json',
       data: {type: type, identifier: $identifier.val()},
       success: function(result){
-        $result.text(JSON.stringify(result));
+        $result.text(JSON.stringify(result, null, 4));
       },
       error: function(){
         alert('No results.');
