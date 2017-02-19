@@ -1,5 +1,5 @@
 # NeoControl
-This application has been created as a research project for using web technologies to build a general purpose access management system in the cloud. It is meant to provide a base implementation for using graph database technology to model the complicated access control rules. 
+This application has been created as a research project for using web technologies to build a general purpose access management system in the cloud. It is meant to provide a base implementation for using graph database technology to model the complicated access control rules. Managing access control is enabled via UI implemented using D3.js.
 
 ## Setup
  - `rake neo4j:install[community-latest]`
